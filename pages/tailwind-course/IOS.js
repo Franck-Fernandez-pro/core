@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import Image from 'next/image';
+import Link from "next/link";
+import Image from "next/image";
 
 {
   /* IOS 15 notification summary with Tailwind CSS */
@@ -15,12 +15,12 @@ export default function IOS({}) {
       <Phone>
         {/* CARD */}
         <div className="absolute -bottom-4 inset-x-0 h-full bg-white/10 backdrop-blur-md rounded-2xl scale-[0.85] origin-bottom" />
-        <div className="absolute -bottom-2 inset-x-0 h-full bg-white/30 backdrop-blur-md rounded-3xl scale-95 origin-bottom shadow-sm" />
-        <div className="p-4 bg-white/40 rounded-3xl backdrop-blur-md">
+        <div className="-bottom-2 bg-white/30 backdrop-blur-md rounded-3xl absolute inset-x-0 h-full origin-bottom scale-95 shadow-sm" />
+        <div className="bg-white/40 rounded-3xl backdrop-blur-md p-4">
           <CardHeader />
 
           {/* CARD CONTENT */}
-          <div className="mt-2 grid grid-cols-2 gap-2">
+          <div className="grid grid-cols-2 gap-2 mt-2">
             <CardNews
               imageSrc="/tailwind-course/surfing.jpeg"
               imageAlt="Surfer at sunset"
@@ -35,8 +35,8 @@ export default function IOS({}) {
               text="Bucks vs Suns is shaping up to be a very intriguing series!"
             />
           </div>
-          <hr className="mt-4 border-black/20" />
-          <div className="mt-3 grid grid-cols-3 gap-1 items-end">
+          <hr className="border-black/20 mt-4" />
+          <div className="grid items-end grid-cols-3 gap-1 mt-3">
             <div className="col-span-2">
               <h3 className="text-sm font-bold">More updates</h3>
               <p className="mt-0.5 text-xs">
@@ -45,9 +45,9 @@ export default function IOS({}) {
             </div>
             <ul className="flex flex-row-reverse -space-x-4 space-x-reverse">
               <li>
-                <div className="relative h-8 w-8">
+                <div className="relative w-8 h-8">
                   <Image
-                    className="object-cover rounded-xl"
+                    className="rounded-xl object-cover"
                     src="/tailwind-course/keystone.png"
                     alt="Keystone's logo"
                     layout="fill"
@@ -56,9 +56,9 @@ export default function IOS({}) {
               </li>
 
               <li>
-                <div className="relative h-8 w-8">
+                <div className="relative w-8 h-8">
                   <Image
-                    className="object-cover rounded-xl"
+                    className="rounded-xl object-cover"
                     src="/tailwind-course/polywork.jpeg"
                     alt="Polywork's logo"
                     layout="fill"
@@ -67,9 +67,9 @@ export default function IOS({}) {
               </li>
 
               <li>
-                <div className="relative h-8 w-8">
+                <div className="relative w-8 h-8">
                   <Image
-                    className="object-cover rounded-xl"
+                    className="rounded-xl object-cover"
                     src="/tailwind-course/prisma.png"
                     alt="Prisma's logo"
                     layout="fill"
@@ -87,9 +87,9 @@ export default function IOS({}) {
 }
 // ----------- PHONE
 const Phone = ({ children }) => (
-  <div className="py-10 min-h-screen bg-purple-50 flex justify-center items-center">
+  <div className="bg-purple-50 flex items-center justify-center min-h-screen py-10">
     <div className="relative h-[712px] w-[350px] bg-black rounded-[60px] overflow-hidden border-[14px] border-black">
-      <div className="absolute h-full w-full inset-0">
+      <div className="absolute inset-0 w-full h-full">
         <Image
           className="object-cover"
           src="/tailwind-course/iphone-rainbow.jpg"
@@ -98,38 +98,38 @@ const Phone = ({ children }) => (
         />
       </div>
 
-      <div className="absolute top-0 inset-x-0">
-        <div className="h-6 w-40 mx-auto bg-black rounded-b-2xl" />
+      <div className="absolute inset-x-0 top-0">
+        <div className="rounded-b-2xl w-40 h-6 mx-auto bg-black" />
       </div>
       <div className="relative">
         {/* HEADER */}
-        <div className="mt-2 mr-5 flex justify-end space-x-1">
+        <div className="flex justify-end mt-2 mr-5 space-x-1">
           <Bar />
           <Wifi />
           <Truck />
         </div>
         <div className="mt-1 h-0.5 w-10 bg-white/50 mr-7 ml-auto rounded" />
 
-        <div className="mt-2 flex flex-col items-center">
+        <div className="flex flex-col items-center mt-2">
           <Lock />
-          <p className="mt-3 text-white text-6xl font-extralight">13:37</p>
-          <p className="mt-1 text-white text-lg font-light">Monday, June 7</p>
+          <p className="font-extralight mt-3 text-6xl text-white">13:37</p>
+          <p className="mt-1 text-lg font-light text-white">Monday, June 7</p>
         </div>
         {/* HEADER END */}
-        <div className="relative mt-4 mx-2">{children}</div>
+        <div className="relative mx-2 mt-4">{children}</div>
       </div>
-      <div className="absolute h-20 inset-x-0 -bottom-0">
+      <div className="-bottom-0 absolute inset-x-0 h-20">
         <div className="flex justify-between px-10">
-          <button className="bg-gray-800/40 rounded-full backdrop-blur-md p-2">
+          <button className="bg-gray-800/40 backdrop-blur-md p-2 rounded-full">
             <Light />
           </button>
-          <button className="bg-gray-800/40 rounded-full backdrop-blur-md p-2">
+          <button className="bg-gray-800/40 backdrop-blur-md p-2 rounded-full">
             <Camera />
           </button>
         </div>
       </div>
-      <div className="absolute bottom-1 inset-x-0">
-        <div className="mx-auto rounded h-1 w-28 bg-white" />
+      <div className="bottom-1 absolute inset-x-0">
+        <div className="w-28 h-1 mx-auto bg-white rounded" />
       </div>
     </div>
   </div>
@@ -141,16 +141,16 @@ const CardHeader = ({}) => (
       <p className="text-xs font-bold">9:30 AM</p>
       <h2 className="text-lg font-bold"> Your morning summary</h2>
     </div>
-    <span className="bg-gray-500 h-8 w-8 rounded-full text-white flex items-center justify-center">
+    <span className="flex items-center justify-center w-8 h-8 text-white bg-gray-500 rounded-full">
       11
     </span>
   </div>
 );
 const CardNews = ({ imageSrc, imageAlt, title, text }) => (
   <div>
-    <div className="relative h-24 w-full">
+    <div className="relative w-full h-24">
       <Image
-        className="rounded-lg object-cover"
+        className="object-cover rounded-lg"
         src={imageSrc}
         alt={imageAlt}
         layout="fill"
@@ -166,7 +166,7 @@ const CardNews = ({ imageSrc, imageAlt, title, text }) => (
 const Bar = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className="h-4 w-4 text-white"
+    className="w-4 h-4 text-white"
     viewBox="0 0 20 20"
     fill="currentColor"
   >
@@ -176,7 +176,7 @@ const Bar = () => (
 const Wifi = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className="h-4 w-4 text-white"
+    className="w-4 h-4 text-white"
     viewBox="0 0 20 20"
     fill="currentColor"
   >
@@ -190,7 +190,7 @@ const Wifi = () => (
 const Truck = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className="h-4 w-4 text-white"
+    className="w-4 h-4 text-white"
     viewBox="0 0 20 20"
     fill="currentColor"
   >
@@ -201,7 +201,7 @@ const Truck = () => (
 const Lock = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className="h-8 w-8 text-white"
+    className="w-8 h-8 text-white"
     viewBox="0 0 20 20"
     fill="currentColor"
   >
@@ -215,7 +215,7 @@ const Lock = () => (
 const Light = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className="h-6 w-6 text-white"
+    className="w-6 h-6 text-white"
     viewBox="0 0 20 20"
     fill="currentColor"
   >
@@ -225,7 +225,7 @@ const Light = () => (
 const Camera = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className="h-6 w-6 text-white"
+    className="w-6 h-6 text-white"
     viewBox="0 0 20 20"
     fill="currentColor"
   >
