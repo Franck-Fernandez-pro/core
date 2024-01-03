@@ -1,3 +1,15 @@
+import { Fondamento } from "next/font/google";
+import Link from "next/link";
+
+const fondamento = Fondamento({ weight: "400", subsets: ["latin"] });
+const linkProps = {
+  className: "hover:italic hover:translate-x-1",
+  style: {
+    transition:
+      "transform .3s ease-in-out, color .3s ease-in-out, font-size .3s ease-in-out",
+  },
+};
+
 export default function Home() {
   return (
     <main className="mx-auto max-w-[80%]">
@@ -20,6 +32,20 @@ export default function Home() {
             </a>
           </p>
         </div>
+      </section>
+
+      <section
+        className={`${fondamento.className} flex flex-col pt-[10%] text-9xl uppercase`}
+      >
+        <Link href="/work" {...linkProps}>
+          Work
+        </Link>
+        <Link href="/about" {...linkProps}>
+          About
+        </Link>
+        <Link href="/contact" {...linkProps}>
+          Contact
+        </Link>
       </section>
     </main>
   );
