@@ -12,7 +12,7 @@ const linkProps = {
 
 export default function Home() {
   return (
-    <main className="mx-auto grid max-w-[80%] grid-rows-2 lg:grid-cols-3">
+    <main className="grid grid-rows-2 lg:grid-cols-3">
       <section className="mt-[30%] lg:mt-[120%]">
         <h1 className="mb-4 text-base font-medium uppercase tracking-[2px]">
           Franck Fernandez
