@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const fondamento = Fondamento({ weight: "400", subsets: ["latin"] });
 const linkProps = {
-  className: "hover:italic hover:translate-x-1",
+  className: "hover:italic hover:translate-x-1 px-2",
   style: {
     transition:
       "transform .3s ease-in-out, color .3s ease-in-out, font-size .3s ease-in-out",
@@ -12,8 +12,8 @@ const linkProps = {
 
 export default function Home() {
   return (
-    <main className="mx-auto max-w-[80%]">
-      <section className="pt-[30%]">
+    <main className="mx-auto grid max-w-[80%] grid-rows-2 lg:grid-cols-3">
+      <section className="mt-[30%] lg:mt-[120%]">
         <h1 className="mb-4 text-base font-medium uppercase tracking-[2px]">
           Franck Fernandez
         </h1>
@@ -22,7 +22,7 @@ export default function Home() {
             Full stack developer / Web3 developer / Blockchain enthusiastic.
           </p>
           <p>
-            Currently working full-time as a web developer at{" "}
+            Currently working full-time as web developer at{" "}
             <a
               className="delay-250 cursor-pointer border-b-2 border-solid border-[#000] no-underline transition-all hover:border-transparent hover:line-through"
               href="https://www.linkedin.com/company/explorers-g/"
@@ -35,17 +35,23 @@ export default function Home() {
       </section>
 
       <section
-        className={`${fondamento.className} flex flex-col pt-[10%] text-9xl uppercase`}
+        className={`${fondamento.className} flex flex-col pt-[10%] text-right text-[135px] uppercase lg:col-span-2`}
       >
-        <Link href="/work" {...linkProps}>
-          Work
-        </Link>
-        <Link href="/about" {...linkProps}>
-          About
-        </Link>
-        <Link href="/contact" {...linkProps}>
-          Contact
-        </Link>
+        <span>
+          <Link href="/work" {...linkProps}>
+            Work
+          </Link>
+        </span>
+        <span>
+          <Link href="/about" {...linkProps}>
+            About
+          </Link>
+        </span>
+        <span>
+          <Link href="/contact" {...linkProps}>
+            Contact
+          </Link>
+        </span>
       </section>
     </main>
   );
