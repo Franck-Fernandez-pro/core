@@ -15,23 +15,23 @@ export default function About() {
 
   return (
     <section>
-      <Image
-        className="mr[-50%] absolute !left-auto bottom-0 right-0 top-0 z-[-1] mt-[10%] block !h-auto !w-[30%]"
-        src="/about.jpeg"
-        // width={249}
-        // height={312}
-        fill
-        alt="Franck Fernandez"
-      />
-      <h1 className={`${fondamento.className} z-10 text-[14vw] font-light`}>
-        About
-      </h1>
+      <div className="flex justify-between">
+        <div className={`${fondamento.className}`}>
+          <h1 className="text-[14vw] font-light">About</h1>
+          <span className="pb-[2%] text-[46px] leading-10">
+            I'm Franck. A developer, maker and problem solver.
+          </span>
+        </div>
 
-      <span
-        className={`${fondamento.className} z-10 pb-[2%] text-[46px] leading-10`}
-      >
-        I'm Franck. A developer, maker and problem solver.
-      </span>
+        <Image
+          className="hidden !h-auto !w-[30%] md:block"
+          src="/about.jpeg"
+          width={249}
+          height={312}
+          alt="Franck Fernandez"
+        />
+      </div>
+
       <br />
       <br />
       <br />
