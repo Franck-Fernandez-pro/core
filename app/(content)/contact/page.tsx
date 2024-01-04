@@ -7,7 +7,7 @@ export default function Contact() {
     "delay-250 cursor-pointer border-b-2 border-solid border-[#000] no-underline transition-all hover:border-transparent hover:line-through";
 
   return (
-    <section className="pt-[30%]">
+    <section className="pt-[20%]">
       <h1 className={`${fondamento.className} text-[14vw] font-light`}>
         Hello.
       </h1>
