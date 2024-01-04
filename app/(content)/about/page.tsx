@@ -60,7 +60,7 @@ export default function About() {
         <br />
         <br />
         <a
-          className="delay-250 cursor-pointer border-b-2 border-solid border-[#000] no-underline transition-all hover:border-transparent hover:line-through"
+          className="link"
           href="https://www.linkedin.com/in/franck-fernandez-31b393161/"
         >
           Learn more on LinkedIn

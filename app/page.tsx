@@ -24,7 +24,7 @@ export default function Home() {
           <p>
             Currently working full-time as web developer at{" "}
             <a
-              className="delay-250 cursor-pointer border-b-2 border-solid border-[#000] no-underline transition-all hover:border-transparent hover:line-through"
+              className="link"
               href="https://www.linkedin.com/company/explorers-g/"
               target="_blank"
             >

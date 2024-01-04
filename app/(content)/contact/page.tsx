@@ -3,9 +3,6 @@ import { Fondamento } from "next/font/google";
 const fondamento = Fondamento({ weight: "400", subsets: ["latin"] });
 
 export default function Contact() {
-  const linkClassName =
-    "delay-250 cursor-pointer border-b-2 border-solid border-[#000] no-underline transition-all hover:border-transparent hover:line-through";
-
   return (
     <section className="pt-[20%]">
       <h1 className={`${fondamento.className} text-[14vw] font-light`}>
@@ -18,20 +15,17 @@ export default function Contact() {
         <br />
         <br />
         <a
-          className={linkClassName}
+          className="link"
           href="https://www.linkedin.com/in/franck-fernandez-31b393161/"
         >
           LinkedIn
         </a>{" "}
         /{" "}
-        <a className={linkClassName} href="https://twitter.com/Akela_FR">
+        <a className="link" href="https://twitter.com/Akela_FR">
           Twitter
         </a>{" "}
         /{" "}
-        <a
-          className={linkClassName}
-          href="https://github.com/Franck-Fernandez-pro"
-        >
+        <a className="link" href="https://github.com/Franck-Fernandez-pro">
           Github
         </a>
       </p>
