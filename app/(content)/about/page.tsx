@@ -62,6 +62,7 @@ export default function About() {
         <a
           className="link"
           href="https://www.linkedin.com/in/franck-fernandez-31b393161/"
+          target="_blank"
         >
           Learn more on LinkedIn
         </a>

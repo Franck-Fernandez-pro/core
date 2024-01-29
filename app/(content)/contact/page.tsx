@@ -17,15 +17,20 @@ export default function Contact() {
         <a
           className="link"
           href="https://www.linkedin.com/in/franck-fernandez-31b393161/"
+          target="_blank"
         >
           LinkedIn
         </a>{" "}
         /{" "}
-        <a className="link" href="https://twitter.com/Akela_FR">
+        <a className="link" href="https://twitter.com/Akela_FR" target="_blank">
           Twitter
         </a>{" "}
         /{" "}
-        <a className="link" href="https://github.com/Franck-Fernandez-pro">
+        <a
+          className="link"
+          href="https://github.com/Franck-Fernandez-pro"
+          target="_blank"
+        >
           Github
         </a>
       </p>
