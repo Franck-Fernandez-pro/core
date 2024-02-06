@@ -17,10 +17,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="fr">
-      <body className={`${montserrat.className} bg-[#ece7e1] text-[#1a1818]`}>
+    <html lang="fr" className="h-full">
+      <body
+        className={`${montserrat.className} h-full bg-[#ece7e1] text-[#1a1818]`}
+      >
         <Navbar />
-        <div className="mx-auto max-w-[80%]">{children}</div>
+        <div className="mx-auto h-full max-w-[85%] overflow-hidden">
+          {children}
+        </div>
       </body>
     </html>
   );

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const fondamento = Fondamento({ weight: "400", subsets: ["latin"] });
 const linkProps = {
-  className: "hover:italic hover:translate-x-1 px-2",
+  className: "hover:italic hover:translate-x-1 pr-6",
   style: {
     transition:
       "transform .3s ease-in-out, color .3s ease-in-out, font-size .3s ease-in-out",
@@ -12,8 +12,8 @@ const linkProps = {
 
 export default function Home() {
   return (
-    <main className="grid grid-rows-2 lg:grid-cols-3">
-      <section className="mt-[30%] lg:mt-[120%]">
+    <main className="grid grid-rows-2 gap-3 lg:grid-cols-3">
+      <section className="flex h-screen flex-col justify-end pb-[100%]">
         <h1 className="mb-4 text-base font-medium uppercase tracking-[2px]">
           Franck Fernandez
         </h1>
@@ -35,7 +35,7 @@ export default function Home() {
       </section>
 
       <section
-        className={`${fondamento.className} flex flex-col pt-[10%] text-right text-[135px] uppercase lg:col-span-2`}
+        className={`${fondamento.className} flex flex-col justify-end pb-[37%] text-right text-[135px] uppercase lg:col-span-2`}
       >
         <span>
           <Link href="/work" {...linkProps}>
