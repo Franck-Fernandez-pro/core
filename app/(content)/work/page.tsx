@@ -30,8 +30,8 @@ const JOBS = [
 
 export default function Work() {
   return (
-    <section className="lg:grid-rows-0 flex grid-rows-3 flex-col gap-7 lg:grid lg:grid-cols-3 lg:gap-3">
-      <div className="mt-[20%] flex flex-col lg:h-screen lg:justify-center">
+    <section className="lg:grid-rows-0 flex flex-col gap-7 lg:grid lg:grid-cols-3 lg:gap-3">
+      <div className="flex flex-col pt-[20%] lg:h-screen lg:justify-center">
         <h1 className="mb-4 text-base font-medium uppercase tracking-[2px]">
           WORK
         </h1>

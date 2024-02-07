@@ -12,8 +12,8 @@ const linkProps = {
 
 export default function Home() {
   return (
-    <main className="grid-cols-0 lg:grid-rows-0 grid grid-rows-3 gap-7 lg:grid-cols-3 lg:gap-3">
-      <section className="mt-[30%] flex flex-col lg:mt-0 lg:h-screen lg:justify-end lg:pb-[100%]">
+    <main className="grid-cols-0 lg:grid-rows-0 grid gap-7 lg:grid-cols-3 lg:gap-3">
+      <section className="flex flex-col pt-[30%] lg:h-[96vh] lg:justify-end lg:pb-[100%] lg:pt-0">
         <h1 className="mb-4 text-base font-medium uppercase tracking-[2px]">
           Franck Fernandez
         </h1>

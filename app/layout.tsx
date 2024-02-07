@@ -22,7 +22,7 @@ export default function RootLayout({
         className={`${montserrat.className} h-full bg-[#ece7e1] text-[#1a1818]`}
       >
         <Navbar />
-        <div className="mx-auto h-full max-w-[85%] overflow-hidden">
+        <div className="mx-auto h-full max-w-[85%] ">
           {children}
         </div>
       </body>
