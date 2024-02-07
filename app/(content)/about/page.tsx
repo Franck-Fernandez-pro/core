@@ -16,7 +16,7 @@ export default function About() {
   return (
     <section>
       <div className="flex justify-between">
-        <div className={`${fondamento.className}`}>
+        <div className={fondamento.className}>
           <h1 className="text-[14vw] font-light">About</h1>
           <span className="pb-[2%] text-[46px] leading-10">
             I'm Franck. A developer, maker and problem solver.
@@ -26,8 +26,8 @@ export default function About() {
         <Image
           className="hidden !h-auto !w-[30%] md:block"
           src="/about.jpeg"
-          width={249}
-          height={312}
+          width={747}
+          height={1051}
           alt="Franck Fernandez"
         />
       </div>
