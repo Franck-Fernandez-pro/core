@@ -15,7 +15,7 @@ export default function About() {
 
   return (
     <section>
-      <div className="flex justify-between">
+      <div className="flex justify-between pt-[12%]">
         <div className={fondamento.className}>
           <h1 className="text-[14vw] font-light">About</h1>
           <span className="pb-[2%] text-[46px] leading-10">
