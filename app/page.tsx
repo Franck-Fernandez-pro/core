@@ -12,8 +12,8 @@ const linkProps = {
 
 export default function Home() {
   return (
-    <main className="grid grid-rows-2 gap-3 lg:grid-cols-3">
-      <section className="flex h-screen flex-col justify-end pb-[100%]">
+    <main className="grid-cols-0 lg:grid-rows-0 grid grid-rows-3 gap-7 lg:grid-cols-3 lg:gap-3">
+      <section className="mt-[30%] flex flex-col lg:mt-0 lg:h-screen lg:justify-end lg:pb-[100%]">
         <h1 className="mb-4 text-base font-medium uppercase tracking-[2px]">
           Franck Fernandez
         </h1>
@@ -35,7 +35,7 @@ export default function Home() {
       </section>
 
       <section
-        className={`${fondamento.className} flex flex-col justify-end pb-[37%] text-right text-[135px] uppercase lg:col-span-2`}
+        className={`${fondamento.className} row-span-2 flex flex-col text-[15vw] uppercase lg:col-span-2 lg:row-span-1 lg:justify-end lg:pb-[37%] lg:text-right lg:text-[135px]`}
       >
         <span>
           <Link href="/work" {...linkProps}>
