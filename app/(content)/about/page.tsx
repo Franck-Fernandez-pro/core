@@ -14,7 +14,7 @@ export default function About() {
   );
 
   return (
-    <section>
+    <section className="pb-10">
       <div className="flex justify-between pt-[12%]">
         <div className={fondamento.className}>
           <h1 className="text-[14vw] font-light">About</h1>

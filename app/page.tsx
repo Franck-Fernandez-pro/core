@@ -35,7 +35,7 @@ export default function Home() {
       </section>
 
       <section
-        className={`${fondamento.className} row-span-2 flex flex-col text-[15vw] uppercase lg:col-span-2 lg:row-span-1 lg:justify-end lg:pb-[37%] lg:text-right lg:text-[135px]`}
+        className={`${fondamento.className} row-span-2 flex flex-col text-[15vw] uppercase lg:col-span-2 lg:row-span-1 lg:justify-end lg:pb-[10%] lg:text-right lg:text-[135px]`}
       >
         <span>
           <Link href="/work" {...linkProps}>
