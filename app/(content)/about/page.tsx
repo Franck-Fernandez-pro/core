@@ -1,5 +1,10 @@
 import { fondamento } from "@/constant";
+import { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "About",
+};
 
 const quoteClassName = `${fondamento.className} text-xl font-medium uppercase leading-7 tracking-[4px]`;
 

@@ -1,5 +1,10 @@
 import { JOBS, fondamento } from "@/constant";
+import { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Jobs",
+};
 
 const linkProps = {
   className: "hover:italic hover:translate-x-1 px-2",

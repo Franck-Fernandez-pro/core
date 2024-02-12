@@ -1,4 +1,5 @@
 import { fondamento } from "@/constant";
+import { Metadata } from "next";
 import Link from "next/link";
 
 const linkProps = {
@@ -17,9 +18,7 @@ export default function Home() {
           Franck Fernandez
         </h1>
         <div className="space-y-4 text-[13px] tracking-[0.5px]">
-          <p>
-            Full stack developer / Web3 developer / Blockchain enthusiastic.
-          </p>
+          <p>Full stack & Web3 developer / Blockchain enthusiastic.</p>
           <p>
             Currently working full-time as web developer at{" "}
             <a
