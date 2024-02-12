@@ -1,7 +1,6 @@
-import { Fondamento } from "next/font/google";
+import { fondamento } from "@/constant";
 import Image from "next/image";
 
-const fondamento = Fondamento({ weight: "400", subsets: ["latin"] });
 const quoteClassName = `${fondamento.className} text-xl font-medium uppercase leading-7 tracking-[4px]`;
 
 export default function About() {

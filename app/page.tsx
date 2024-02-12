@@ -1,7 +1,6 @@
-import { Fondamento } from "next/font/google";
+import { fondamento } from "@/constant";
 import Link from "next/link";
 
-const fondamento = Fondamento({ weight: "400", subsets: ["latin"] });
 const linkProps = {
   className: "hover:italic hover:translate-x-1 pr-6",
   style: {
@@ -13,7 +12,7 @@ const linkProps = {
 export default function Home() {
   return (
     <main className="grid-cols-0 lg:grid-rows-0 grid gap-7 lg:grid-cols-3 lg:gap-3">
-      <section className="flex flex-col pt-[30%] lg:h-[96vh] lg:justify-end lg:pb-[100%] lg:pt-0">
+      <section className="flex flex-col pt-[30%] lg:h-screen lg:justify-center lg:pt-0">
         <h1 className="mb-4 text-base font-medium uppercase tracking-[2px]">
           Franck Fernandez
         </h1>

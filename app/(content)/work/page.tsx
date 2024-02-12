@@ -1,7 +1,6 @@
-import { Fondamento } from "next/font/google";
+import { JOBS, fondamento } from "@/constant";
 import Link from "next/link";
 
-const fondamento = Fondamento({ weight: "400", subsets: ["latin"] });
 const linkProps = {
   className: "hover:italic hover:translate-x-1 px-2",
   style: {
@@ -9,24 +8,6 @@ const linkProps = {
       "transform .3s ease-in-out, color .3s ease-in-out, font-size .3s ease-in-out",
   },
 };
-
-const JOBS = [
-  {
-    title: "Video Editor",
-    company: "SkewerLab",
-    href: "/work/skewerlab-editor",
-  },
-  {
-    title: "User Manger",
-    company: "SkewerLab",
-    href: "/work/skewerlab-user_manager",
-  },
-  {
-    title: "Video Player",
-    company: "SkewerLab",
-    href: "/work/skewerlab-player",
-  },
-];
 
 export default function Work() {
   return (
@@ -50,7 +31,7 @@ export default function Work() {
       </div>
 
       <div
-        className={`${fondamento.className} flex flex-col justify-center text-[10vw] uppercase lg:col-span-2 lg:ml-20 lg:text-right lg:text-[6vw]`}
+        className={`${fondamento.className} flex flex-col justify-center text-[10vw] uppercase lg:col-span-2 lg:ml-20 lg:text-[6vw]`}
       >
         {JOBS.map(({ company, title, href }, idx) => (
           <span key={idx} className="flex-0 flex w-fit flex-col">

@@ -1,6 +1,4 @@
-import { Fondamento } from "next/font/google";
-
-const fondamento = Fondamento({ weight: "400", subsets: ["latin"] });
+import { fondamento } from "@/constant";
 
 export default function Contact() {
   return (
