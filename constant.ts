@@ -10,19 +10,17 @@ export const JOBS = [
     href: "/work/skewerlab-editor",
     summary:
       "Make videos optimized to tailor content for multiple audiences. Thanks to SkewerLab, hundreds of videos can be generated from a single project.",
-    role: ["Web developer", "Technical advisor"],
+    role: ["Front developer", "Technical advisor"],
     responsibilities: [
       "Features definition",
-      "Web application development/debugging",
+      "Front Development/Debugging",
       "Writing internal/external documentation",
-      "Customer reference for integration and project distribution",
       "Improve workflow and application release process",
     ],
     stack: [
-      "React/JS vanilla",
+      "React",
+      "Redux",
       "Webpack",
-      "HlsJS & VideoJS",
-      "Cypress/Jest",
       "CI/CD (Gitlab)",
       "Git Flow",
       "Jira & Confluence",
@@ -33,14 +31,28 @@ export const JOBS = [
     company: "SkewerLab",
     companyLink: "https://www.skewerlab.com",
     href: "/work/skewerlab-user_manager",
-    summary: "summary TODO",
+    summary:
+      "Originally designed as an internal tool, this solution streamlines the creation, deletion, and modification of users, providing sales teams and project managers with enhanced control over application access.",
+    role: ["Web developer", "Web designer"],
+    responsibilities: ["Front Development/Debugging", "Web design"],
+    stack: ["React", "Bootstrap", "CI/CD (Gitlab)"],
   },
   {
     title: "Video Player",
     company: "SkewerLab",
     companyLink: "https://www.skewerlab.com",
     href: "/work/skewerlab-player",
-    summary: "summary TODO",
+    summary:
+      "In addition to video scripting, SkewerLab enables data-driven videos to be broadcast with a custom video player.",
+    role: ["Web developer", "Technical advisor", "User referent"],
+    responsibilities: [
+      "Features definition",
+      "Front Development/Debugging",
+      "Writing internal/external documentation",
+      "Customer reference for integration and project distribution",
+      "Improve workflow and application release process",
+    ],
+    stack: ["JS vanilla", "HlsJS", "VideoJS", "M3U8", "Cypress", "Webpack"],
   },
   {
     title: "MyRole v3",
@@ -49,10 +61,10 @@ export const JOBS = [
     href: "/work/my-role",
     summary:
       "Redesign of the MyRole front-end application (administrative management application for intermittent workers in the film and audiovisual industries).",
-    role: ["Web developer", "Technical advisor"],
+    role: ["Web developer", "Technical advisor", "Internship supervisor"],
     responsibilities: [
       "Features definition",
-      "Web application development/debugging",
+      "Front Development/Debugging",
       "Applications architecture",
     ],
     stack: [
