@@ -1,4 +1,5 @@
 import { fondamento } from "@/constant";
+import { yearsDifference } from "@/utils";
 import { Metadata } from "next";
 import Image from "next/image";
 
@@ -9,14 +10,6 @@ export const metadata: Metadata = {
 const quoteClassName = `${fondamento.className} text-xl font-medium uppercase leading-7 tracking-[4px]`;
 
 export default function About() {
-  const currentDate = new Date();
-  const referenceDate = new Date(2019, 0, 1);
-  const timeDifferenceInMilliseconds =
-    currentDate.getTime() - referenceDate.getTime();
-  const yearsDifference = Math.floor(
-    timeDifferenceInMilliseconds / (1000 * 60 * 60 * 24 * 365.25),
-  );
-
   return (
     <section className="pb-10">
       <div className="mb-5 flex justify-between pt-[12%]">
@@ -76,7 +69,8 @@ En embrassant la polyvalence, j'ai navigué dans les domaines autour de mon rôl
         <br />
         <span className={quoteClassName}>Experience</span>
         <br />
-        <br />- {yearsDifference} years experience in Web Development
+        <br />- {yearsDifference(new Date(2019, 0, 1))} years experience in Web
+        Development
         <br />- Alyra, Blockchain Developer
         <br />- Licence Pro DIM (Multi-media computer developer)
         <br />- DUT MMI (Multimedia and Internet professions)
