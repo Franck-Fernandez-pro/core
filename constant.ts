@@ -25,7 +25,14 @@ export const JOBS = [
       "Git Flow",
       "Jira & Confluence",
     ],
-    video: "/skewer/demo.mp4"
+    video: "/skewer/demo.mp4",
+    images: [
+      "/skewer/graph.png",
+      "/skewer/media_lib.png",
+      "/skewer/key_value.png",
+      "/skewer/preview.png",
+      "/skewer/external-preview.png",
+    ],
   },
   {
     title: "User Manger",
@@ -37,6 +44,12 @@ export const JOBS = [
     role: ["Web developer", "Web designer"],
     responsibilities: ["Front Development/Debugging", "Web design"],
     stack: ["React", "Bootstrap", "CI/CD (Gitlab)"],
+    video: null,
+    images: [
+      "/user_manager/user.png",
+      "/user_manager/profile.png",
+      "/user_manager/create.png",
+    ],
   },
   {
     title: "Video Player",
@@ -54,6 +67,8 @@ export const JOBS = [
       "Improve workflow and application release process",
     ],
     stack: ["JS vanilla", "HlsJS", "VideoJS", "M3U8", "Cypress", "Webpack"],
+    video: null,
+    images: ["/skewer/preview.png", "/skewer/external-preview.png"],
   },
   {
     title: "MyRole v3",

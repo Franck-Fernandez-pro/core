@@ -31,10 +31,12 @@ export default function Project({ params }: Props) {
     role,
     stack,
     video,
+    images,
+    href,
   } = JOB;
 
   const style = {
-    div: "mx-auto",
+    div: "lg:mx-auto",
     ul: "mb-4 border-b border-black text-sm font-semibold uppercase",
     li: "mt-4",
   };
@@ -53,14 +55,14 @@ export default function Project({ params }: Props) {
           </a>
         </h2>
       </div>
-      <div className="mt-[15vh] pb-[15%]">
+      <div className="mt-[15vh] pb-16">
         <p
           className={`${fondamento.className} mx-auto max-w-[70%] text-5xl font-light leading-tight`}
         >
           {summary}
         </p>
 
-        <div className="mx-auto mt-16 grid max-w-[75%] gap-3 lg:grid-cols-3">
+        <div className="mx-auto mt-16 grid max-w-[75%] gap-5 lg:grid-cols-3">
           <div className={style.div}>
             <span className={style.ul}>ROLE</span>
             <ul className={style.li}>
@@ -81,9 +83,10 @@ export default function Project({ params }: Props) {
           </div>
         </div>
       </div>
+
       {video && (
         <video
-          className="mx-auto mb-20 overflow-hidden rounded-xl shadow-2xl"
+          className="mx-auto my-16 overflow-hidden rounded-xl shadow-2xl"
           width="1210"
           height="1025"
           autoPlay
@@ -94,6 +97,27 @@ export default function Project({ params }: Props) {
           <source src={video} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
+      )}
+
+      {images && (
+        <div className="grid gap-5 lg:grid-cols-2">
+          {images &&
+            images.map((src, idx) => (
+              <Image
+                className={`mx-auto rounded-lg ${
+                  href === "/work/skewerlab-editor" ||
+                  href === "/work/skewerlab-player"
+                    ? ""
+                    : "shadow-lg"
+                }`}
+                key={idx}
+                src={src}
+                alt={`${title}-${idx}`}
+                width={600}
+                height={400}
+              />
+            ))}
+        </div>
       )}
     </section>
   );
