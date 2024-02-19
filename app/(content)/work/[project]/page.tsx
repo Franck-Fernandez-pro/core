@@ -1,5 +1,6 @@
 import { JOBS, fondamento } from "@/constant";
 import { Metadata } from "next";
+import Image from "next/image";
 import { redirect } from "next/navigation";
 
 interface Props {
@@ -29,6 +30,7 @@ export default function Project({ params }: Props) {
     responsibilities,
     role,
     stack,
+    video,
   } = JOB;
 
   const style = {
@@ -38,7 +40,7 @@ export default function Project({ params }: Props) {
   };
 
   return (
-    <section>
+    <section className="pb-14">
       <div className="flex h-[95vh] flex-col items-center justify-center pt-[20%]">
         <h1
           className={`${fondamento.className} text-center text-[14vw] font-light uppercase leading-none`}
@@ -51,7 +53,6 @@ export default function Project({ params }: Props) {
           </a>
         </h2>
       </div>
-
       <div className="mt-[15vh] pb-[15%]">
         <p
           className={`${fondamento.className} mx-auto max-w-[70%] text-5xl font-light leading-tight`}
@@ -80,6 +81,20 @@ export default function Project({ params }: Props) {
           </div>
         </div>
       </div>
+      {video && (
+        <video
+          className="mx-auto mb-20 overflow-hidden rounded-xl shadow-2xl"
+          width="1210"
+          height="1025"
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
+          <source src={video} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      )}
     </section>
   );
 }

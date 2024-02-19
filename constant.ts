@@ -25,6 +25,7 @@ export const JOBS = [
       "Git Flow",
       "Jira & Confluence",
     ],
+    video: "/skewer/demo.mp4"
   },
   {
     title: "User Manger",
