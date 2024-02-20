@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="fixed flex h-full w-[6%] flex-col items-center justify-start pb-8 pt-[5%]">
+    <nav className="fixed flex h-full w-[6%] flex-col items-center justify-start pt-[10%] md:pt-[5%]">
       <Link
         href="/"
         style={{
