@@ -14,7 +14,7 @@ export default function Navbar() {
       </Link>
 
       <div className="mb-20 mt-3 h-24 w-[1px] bg-[#1a1818]"></div>
-      <div className="mb-10 mt-auto -rotate-90 pl-5 pr-4 text-center text-[10px] font-medium uppercase tracking-[5px]">
+      <div className="mb-10 mt-auto hidden -rotate-90 pl-5 pr-4 text-center text-[10px] font-medium uppercase tracking-[5px] md:block">
         ©2024
       </div>
     </nav>

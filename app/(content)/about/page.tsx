@@ -15,7 +15,7 @@ export default function About() {
       <div className="mb-5 flex justify-between pt-[12%]">
         <div className={fondamento.className}>
           <h1 className="text-[14vw] font-light">About</h1>
-          <span className="pb-[2%] text-[46px] leading-10">
+          <span className="md:leading-1 pb-[2%] text-[46px] leading-[50px]">
             I'm Franck. A developer, maker and problem solver.
           </span>
         </div>
@@ -29,7 +29,7 @@ export default function About() {
         />
       </div>
 
-      <p className="max-w-[75%] leading-8">
+      <p className="leading-8 md:max-w-[75%]">
         {/* C'est à l'intersection de l'innovation et de la technologie que j'ai toujours trouvé ma passion. Qu'il s'agisse de Typescript, NextJS, Solidity, Storybook ou CSS, j'ai plongé dans diverses technologies avec un esprit d'innovation qui remonte à mes débuts avec simplement HTML et CSS.
 
 En 2024, mon parcours s'étend de la conception d'application web à la conception de smart contract, player vidéo, le développement web mais, surtout, la conception d'application ayant de l'impact. Chaque étape, petite ou grande, m'a permis d'arriver là où je suis aujourd'hui.
