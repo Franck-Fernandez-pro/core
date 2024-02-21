@@ -1,4 +1,16 @@
 {
+  "home": {
+    "title": "Franck Fernandez",
+    "description": [
+      "Full stack & Web3 developer / Blockchain enthusiastic.",
+      "Currently working full-time as web developer at"
+    ],
+    "navigation": {
+      "work": "Work",
+      "about": "About",
+      "contact": "Contact"
+    }
+  },
   "about": {
     "title": "About",
     "subheading": "I'm Franck. A developer, maker and problem solver.",

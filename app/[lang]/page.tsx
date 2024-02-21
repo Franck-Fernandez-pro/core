@@ -16,17 +16,17 @@ export default async function Home({
 }: {
   params: { lang: Locale };
 }) {
-  const dict = await getDictionary(lang);
+  const { home } = await getDictionary(lang);
   return (
     <main className="grid-cols-0 lg:grid-rows-0 grid gap-7 lg:grid-cols-3 lg:gap-3">
       <section className="flex flex-col pt-[30%] lg:h-screen lg:justify-center lg:pt-0">
         <h1 className="mb-4 text-base font-medium uppercase tracking-[2px]">
-          Franck Fernandez
+          {home.title}
         </h1>
         <div className="space-y-4 text-[13px] tracking-[0.5px]">
-          <p>Full stack & Web3 developer / Blockchain enthusiastic.</p>
+          <p>{home.description[0]}</p>
           <p>
-            Currently working full-time as web developer at{" "}
+            {`${home.description[1]} `}
             <a
               className="link"
               href="https://www.linkedin.com/company/explorers-g/"
@@ -43,17 +43,17 @@ export default async function Home({
       >
         <span>
           <Link href="/work" {...linkProps}>
-            Work
+            {home.navigation.work}
           </Link>
         </span>
         <span>
           <Link href="/about" {...linkProps}>
-            About
+            {home.navigation.about}
           </Link>
         </span>
         <span>
           <Link href="/contact" {...linkProps}>
-            Contact
+            {home.navigation.contact}
           </Link>
         </span>
       </section>
