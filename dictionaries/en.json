@@ -1,5 +1,28 @@
 {
-  "products": {
-    "cart": "Add to Cart"
+  "about": {
+    "title": "About",
+    "subheading": "I'm Franck. A developer, maker and problem solver.",
+    "paragraphs": [
+      "It's at the intersection of innovation and technology that I've always found my passion. Whether it's Typescript, NextJS, Solidity, Storybook or CSS, I've immersed myself in various technologies with a spirit of innovation that goes back to my early days with just HTML and CSS.",
+      "In 2024, my career extends from web application development to smart contract, video player design, web development and, above all, high-impact application design. Each step, big or small, has helped me get to where I am today.",
+      "What excites me most about being a developer is the ability to design applications that serve a purpose and solve real problems. This goes beyond simple website buttons, and involves a passion for designing applications that really help people. Whether it's improving their video creation process, simplifying a process, it's all about making a meaningful impact.",
+      "Embracing versatility, I've navigated the domains around my job, from web design to scrum master to technical referent, I find joy in the multi-dimensional nature of my work. Understanding user needs, identifying relevant issues and delivering effective solutions quickly are the cornerstones of good product design. I strive for continuous purpose."
+    ],
+    "experience": {
+      "title": "Experience",
+      "one": "years experience in Web Development",
+      "items": [
+        "Alyra, Blockchain Developer",
+        "Licence Pro DIM (Multi-media computer developer)",
+        "DUT MMI (Multimedia and Internet professions)"
+      ]
+    },
+    "skills": {
+      "title": "Skills",
+      "items": [
+        "TypeScript / Solidity / ReactJS / NextJS / Hardhat / Tailwind / Storybook / Cypress / CI-CD / Agile Methodologies / Webflow Development"
+      ]
+    },
+    "LinkedIn": "Learn more on LinkedIn"
   }
 }

@@ -1,5 +1,28 @@
 {
-  "products": {
-    "cart": "Ajouter au panier"
+  "about": {
+    "title": "À propos",
+    "subheading": "Je suis Franck. Développeur, créateur et résolveur de problèmes.",
+    "paragraphs": [
+      "C'est à l'intersection de l'innovation et de la technologie que j'ai toujours trouvé ma passion. Qu'il s'agisse de Typescript, NextJS, Solidity, Storybook ou CSS, j'ai plongé dans diverses technologies avec un esprit d'innovation qui remonte à mes débuts avec simplement HTML et CSS.",
+      "En 2024, mon parcours s'étend de la conception d'application web à la conception de smart contract, player vidéo, le développement web mais, surtout, la conception d'application ayant de l'impact. Chaque étape, petite ou grande, m'a permis d'arriver là où je suis aujourd'hui.",
+      "Ce qui me passionne le plus dans le métier de Développeur, c'est la capacité de concevoir des applications qui servent un objectif et répondent à des problèmes réels. Cela va au-delà des simples boutons de site web, et implique une passion pour la conception d'application qui aident vraiment les gens. Qu'il s'agisse d'améliorer leur processus de création vidéo, de simplfier un processus, il s'agit avant tout d'avoir un impact significatif.",
+      "En adoptant la polyvalence, j'ai navigué dans les domaines autour de mon rôle, de web design, scrum master ou encore référent technique, je trouve la joie dans la nature multidimensionnelle de mon travail. Comprendre les besoins des utilisateurs, identifier les problèmes pertinents et fournir rapidement des solutions efficaces sont les clés de voûte d'une bonne conception de produit. Je souhaite une itération et une amélioration continues, ainsi qu'un potentiel illimité à l'intersection de la technologie et de l'objectif."
+    ],
+    "experience": {
+      "title": "Expérience",
+      "one": "ans d'expérience en développement web",
+      "items": [
+        "Alyra, Développeur Blockchain",
+        "Licence Pro DIM (Développeur informatique multi-support)",
+        "DUT MMI (Métiers du Multimédia et de l'Internet)"
+      ]
+    },
+    "skills": {
+      "title": "Compétences",
+      "items": [
+        "TypeScript / Solidity / ReactJS / NextJS / Hardhat / Tailwind / Storybook / Cypress / CI-CD / Méthodologies Agiles / Webflow Development"
+      ]
+    },
+    "LinkedIn": "En savoir plus sur LinkedIn"
   }
 }
