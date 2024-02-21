@@ -1,20 +1,25 @@
 import { fondamento } from "@/constant";
+import { Locale, getDictionary } from "@/utils/i18n-config";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contact",
 };
 
-export default function Contact() {
+export default async function Contact({
+  params: { lang },
+}: {
+  params: { lang: Locale };
+}) {
+  const { contact } = await getDictionary(lang);
   return (
     <section className="pt-[20%]">
       <h1 className={`${fondamento.className} text-[14vw] font-light`}>
-        Hello.
+        {contact.title}
       </h1>
       <p className="text-[13px] tracking-[0.5px]">
-        Need a beautiful, well-structured website that you can own and maintain
-        yourself? <br />
-        Get in touch.
+        {contact.description} <br />
+        {contact.call_to_action}
         <br />
         <br />
         <a

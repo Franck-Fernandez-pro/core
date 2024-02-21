@@ -36,5 +36,11 @@
       ]
     },
     "LinkedIn": "En savoir plus sur LinkedIn"
+  },
+
+  "contact": {
+    "title": "Hello.",
+    "description": "Besoin d'un beau site, bien structuré que vous pouvez posséder et gérer vous-même ?",
+    "call_to_action": "Prenez contact."
   }
 }
