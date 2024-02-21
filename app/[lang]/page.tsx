@@ -1,5 +1,6 @@
 import { fondamento } from "@/constant";
-import { Metadata } from "next";
+import { getDictionary } from "@/utils/i18n-config";
+import { Locale } from "@/utils/i18n-config";
 import Link from "next/link";
 
 const linkProps = {
@@ -10,7 +11,12 @@ const linkProps = {
   },
 };
 
-export default function Home() {
+export default async function Home({
+  params: { lang },
+}: {
+  params: { lang: Locale };
+}) {
+  const dict = await getDictionary(lang);
   return (
     <main className="grid-cols-0 lg:grid-rows-0 grid gap-7 lg:grid-cols-3 lg:gap-3">
       <section className="flex flex-col pt-[30%] lg:h-screen lg:justify-center lg:pt-0">

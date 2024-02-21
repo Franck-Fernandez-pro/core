@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import Navbar from "@/components/Navbar";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
+import { Locale } from "@/utils/i18n-config";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -17,11 +18,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  params,
 }: {
   children: React.ReactNode;
+  params: { lang: Locale };
 }) {
   return (
-    <html lang="fr" className="h-full">
+    <html lang={params.lang} className="h-full">
       <body
         className={`${montserrat.className} h-full bg-[#ece7e1] text-[#1a1818]`}
       >
