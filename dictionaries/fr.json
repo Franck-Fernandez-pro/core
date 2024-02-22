@@ -6,7 +6,7 @@
       "Travaille actuellement à temps plein en tant que développeur web chez"
     ],
     "navigation": {
-      "work": "Travail",
+      "work": "Projets",
       "about": "À propos",
       "contact": "Contact"
     }
@@ -41,5 +41,13 @@
     "title": "Hello.",
     "description": "Besoin d'un beau site, bien structuré que vous pouvez posséder et gérer vous-même ?",
     "call_to_action": "Prenez contact."
+  },
+  "work": {
+    "title": "Projets",
+    "description": [
+      "Il s'agit d'une vitrine de mon meilleur travail dans une variété de domaines en tant que développeur",
+      "Le monde du développement est en constante évolution, tout comme mon rôle au cours des dernières",
+      "années. Je continue d'apprendre et d'acquérir de nouvelles compétences chaque jour."
+    ]
   }
 }

@@ -1,5 +1,6 @@
 import { JOBS, fondamento } from "@/constant";
 import { yearsDifference } from "@/utils";
+import { Locale, getDictionary } from "@/utils/i18n-config";
 import { Metadata } from "next";
 import Link from "next/link";
 
@@ -15,22 +16,24 @@ const linkProps = {
   },
 };
 
-export default function Work() {
+export default async function Work({
+  params: { lang },
+}: {
+  params: { lang: Locale };
+}) {
+  const { work } = await getDictionary(lang);
   return (
     <section className="lg:grid-rows-0 flex flex-col gap-7 lg:grid lg:grid-cols-3 lg:gap-3">
       <div className="flex flex-col pt-[20%] lg:h-screen lg:justify-center">
         <h1 className="mb-4 text-base font-medium uppercase tracking-[2px]">
-          WORK
+          {work.title}
         </h1>
         <div className="space-y-4 text-[13px] tracking-[0.5px]">
+          <p>{work.description[0]}</p>
           <p>
-            This is a showcase of my best work in a variety of fields as
-            developer.
-          </p>
-          <p>
-            The world of development is constantly evolving and so has my role
-            over the last {yearsDifference(new Date(2019, 0, 1))} years. I'm
-            still learning and gaining new skills every day.
+            {`${work.description[1]} ${yearsDifference(new Date(2019, 0, 1))} ${
+              work.description[2]
+            }`}
           </p>
         </div>
       </div>

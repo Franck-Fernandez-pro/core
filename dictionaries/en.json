@@ -41,5 +41,13 @@
     "title": "Hello.",
     "description": "Need a beautiful, well-structured website that you can own and maintain yourself?",
     "call_to_action": "Get in touch."
+  },
+  "work": {
+    "title": "Work",
+    "description": [
+      "This is a showcase of my best work in a variety of fields as a developer.",
+      "The world of development is constantly evolving and so has my role over the last",
+      "years. I'm still learning and gaining new skills every day."
+    ]
   }
 }
