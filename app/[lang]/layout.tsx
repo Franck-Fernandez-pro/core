@@ -28,7 +28,7 @@ export default function RootLayout({
       <body
         className={`${montserrat.className} h-full bg-[#ece7e1] text-[#1a1818]`}
       >
-        <Navbar />
+        <Navbar lang={params.lang} />
         <div className="mx-auto h-full max-w-[85%] ">{children}</div>
         <SpeedInsights />
         <Analytics />

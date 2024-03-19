@@ -42,17 +42,17 @@ export default async function Home({
         className={`${fondamento.className} row-span-2 flex flex-col text-[15vw] uppercase lg:col-span-2 lg:row-span-1 lg:justify-end lg:pb-[10%] lg:text-right lg:text-[135px]`}
       >
         <span>
-          <Link href="/work" {...linkProps}>
+          <Link href={`${lang}/work`} {...linkProps}>
             {home.navigation.work}
           </Link>
         </span>
         <span>
-          <Link href="/about" {...linkProps}>
+          <Link href={`${lang}/about`} {...linkProps}>
             {home.navigation.about}
           </Link>
         </span>
         <span>
-          <Link href="/contact" {...linkProps}>
+          <Link href={`${lang}/contact`} {...linkProps}>
             {home.navigation.contact}
           </Link>
         </span>

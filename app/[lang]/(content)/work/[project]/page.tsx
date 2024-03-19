@@ -87,7 +87,7 @@ export default async function Project({ params }: Props) {
           </div>
         </div>
       </div>
-      {video}
+
       {video && (
         <video
           className="mx-auto my-16 overflow-hidden rounded-xl shadow-2xl"
