@@ -48,6 +48,10 @@
       "Il s'agit d'une vitrine de mon meilleur travail dans une variété de domaines en tant que développeur",
       "Le monde du développement est en constante évolution, tout comme mon rôle au cours des dernières",
       "années. Je continue d'apprendre et d'acquérir de nouvelles compétences chaque jour."
-    ]
+    ],
+    "project": {
+      "ROLE": "RÔLE",
+      "RESPONSIBILITIES": "RESPONSABILITÉS"
+    }
   }
 }

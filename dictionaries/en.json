@@ -48,6 +48,10 @@
       "This is a showcase of my best work in a variety of fields as a developer.",
       "The world of development is constantly evolving and so has my role over the last",
       "years. I'm still learning and gaining new skills every day."
-    ]
+    ],
+    "project": {
+      "ROLE": "ROLE",
+      "RESPONSIBILITIES": "RESPONSIBILITIES"
+    }
   }
 }

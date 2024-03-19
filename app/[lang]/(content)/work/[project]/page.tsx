@@ -1,10 +1,11 @@
 import { JOBS, fondamento } from "@/constant";
+import { Locale, getDictionary } from "@/utils/i18n-config";
 import { Metadata } from "next";
 import Image from "next/image";
 import { redirect } from "next/navigation";
 
 interface Props {
-  params: { project: string };
+  params: { project: string; lang: Locale };
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -17,7 +18,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default function Project({ params }: Props) {
+export default async function Project({ params }: Props) {
+  const {
+    work: { project },
+  } = await getDictionary(params.lang);
   const JOB = JOBS.find(
     ({ href }) => href.replace("/work/", "") === params.project,
   );
@@ -64,13 +68,13 @@ export default function Project({ params }: Props) {
 
         <div className="mx-auto mt-16 grid max-w-[75%] gap-5 lg:grid-cols-3">
           <div className={style.div}>
-            <span className={style.ul}>ROLE</span>
+            <span className={style.ul}>{project.ROLE}</span>
             <ul className={style.li}>
               {role?.map((r, idx) => <li key={idx}>{r}</li>)}
             </ul>
           </div>
           <div className={style.div}>
-            <span className={style.ul}>RESPONSIBILITIES</span>
+            <span className={style.ul}>{project.RESPONSIBILITIES}</span>
             <ul className={style.li}>
               {responsibilities?.map((r, idx) => <li key={idx}>{r}</li>)}
             </ul>
@@ -83,7 +87,7 @@ export default function Project({ params }: Props) {
           </div>
         </div>
       </div>
-
+      {video}
       {video && (
         <video
           className="mx-auto my-16 overflow-hidden rounded-xl shadow-2xl"
