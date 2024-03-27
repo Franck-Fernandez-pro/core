@@ -72,24 +72,32 @@ export default async function Project({ params }: Props) {
         </p>
 
         <div className="mx-auto mt-16 grid max-w-[75%] gap-5 lg:grid-cols-3">
-          <div className={style.div}>
-            <span className={style.ul}>{project.ROLE}</span>
-            <ul className={style.li}>
-              {role?.map((r, idx) => <li key={idx}>{r}</li>)}
-            </ul>
-          </div>
-          <div className={style.div}>
-            <span className={style.ul}>{project.RESPONSIBILITIES}</span>
-            <ul className={style.li}>
-              {responsibilities?.map((r, idx) => <li key={idx}>{r}</li>)}
-            </ul>
-          </div>
-          <div className={style.div}>
-            <span className={style.ul}>Stack</span>
-            <ul className={style.li}>
-              {stack?.map((s, idx) => <li key={idx}>{s}</li>)}
-            </ul>
-          </div>
+          {role.length > 0 && (
+            <div className={style.div}>
+              <span className={style.ul}>{project.ROLE}</span>
+              <ul className={style.li}>
+                {role?.map((r, idx) => <li key={idx}>{r}</li>)}
+              </ul>
+            </div>
+          )}
+
+          {responsibilities.length > 0 && (
+            <div className={style.div}>
+              <span className={style.ul}>{project.RESPONSIBILITIES}</span>
+              <ul className={style.li}>
+                {responsibilities?.map((r, idx) => <li key={idx}>{r}</li>)}
+              </ul>
+            </div>
+          )}
+
+          {stack.length > 0 && (
+            <div className={style.div}>
+              <span className={style.ul}>Stack</span>
+              <ul className={style.li}>
+                {stack?.map((s, idx) => <li key={idx}>{s}</li>)}
+              </ul>
+            </div>
+          )}
         </div>
       </div>
 

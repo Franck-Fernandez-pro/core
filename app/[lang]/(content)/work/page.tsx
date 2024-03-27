@@ -41,13 +41,20 @@ export default async function Work({
       <div
         className={`${fondamento.className} flex flex-col justify-center text-[10vw] uppercase lg:col-span-2 lg:ml-20 lg:text-[6vw]`}
       >
-        {work.jobs.map(({ company, title, href }, idx) => (
+        {work.jobs.map(({ company, title, href, isPerso }, idx) => (
           <span key={idx} className="flex-0 flex w-fit flex-col">
             <Link href={`/${lang}${href}`} {...linkProps}>
               {title}
             </Link>
-            <span className="-mt-4 mr-auto text-xs tracking-[2px]">
-              - {company}
+            <span
+              className={`-mt-4 mr-auto text-xs tracking-[2px] ${
+                isPerso
+                  ? "rounded-full border border-[#1a1818] px-2 py-[2px]"
+                  : ""
+              }`}
+            >
+              {!isPerso && "- "}
+              {company}
             </span>
           </span>
         ))}

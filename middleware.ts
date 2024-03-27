@@ -41,6 +41,12 @@ export function middleware(request: NextRequest) {
       "/user_manager/user.png",
       "/user_manager/profile.png",
       "/user_manager/create.png",
+      "/spotify-clone/1.png",
+      "/spotify-clone/2.png",
+      "/spotify-clone/3.png",
+      "/spotify-clone/4.png",
+      "/spotify-clone/5.png",
+      "/spotify-clone/6.png",
     ].includes(pathname)
   )
     return;

@@ -147,6 +147,32 @@
         ]
       },
       {
+        "title": "Spotify clone",
+        "company": "Projet perso",
+        "isPerso": true,
+        "companyLink": "https://next-sandbox-git-spotify-clone-franck-fernandez-pro.vercel.app",
+        "href": "/work/spotify-clone",
+        "summary": "Application développée avec le tutoriel de 'code with antonio' pour prendre en main Supabase et Stripe. Vous pouvez créer un compte, télécharger des chansons et les écouter bien sûr.",
+        "role": ["Développeur Full-Stack"],
+        "responsibilities": [],
+        "stack": [
+          "TypeScript",
+          "NextJS",
+          "Tailwind",
+          "Supabase",
+          "Vercel",
+          "Stripe"
+        ],
+        "images": [
+          "/spotify-clone/1.png",
+          "/spotify-clone/2.png",
+          "/spotify-clone/3.png",
+          "/spotify-clone/4.png",
+          "/spotify-clone/5.png",
+          "/spotify-clone/6.png"
+        ]
+      },
+      {
         "title": "Video player",
         "company": "Video Run Run",
         "companyLink": "https://www.videorunrun.com",
