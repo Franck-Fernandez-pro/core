@@ -30,11 +30,21 @@ export default function Navbar(props: { lang: Locale }) {
 
       <div className="mb-10 mt-auto hidden pl-5 pr-4 text-center text-[10px] font-medium uppercase md:block">
         {props.lang === "en" ? (
-          <Link href={redirectedPathName("fr")} locale="fr">
+          <Link
+            href={redirectedPathName("fr")}
+            locale="fr"
+            replace={true}
+            scroll={false}
+          >
             FR
           </Link>
         ) : (
-          <Link href={redirectedPathName("en")} locale="en">
+          <Link
+            href={redirectedPathName("en")}
+            locale="en"
+            replace={true}
+            scroll={false}
+          >
             ENG
           </Link>
         )}
