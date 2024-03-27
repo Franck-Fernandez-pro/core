@@ -52,6 +52,113 @@
     "project": {
       "ROLE": "RÔLE",
       "RESPONSIBILITIES": "RESPONSABILITÉS"
-    }
+    },
+    "jobs": [
+      {
+        "title": "Video Editor",
+        "company": "SkewerLab",
+        "companyLink": "https://www.skewerlab.com",
+        "href": "/work/skewerlab-editor",
+        "summary": "Réalisez des vidéos optimisées pour adapter le contenu à des publics multiples. Grâce à SkewerLab, des centaines de vidéos peuvent être générées à partir d'un seul projet.",
+        "role": ["Développeur front", "Référent technique"],
+        "responsibilities": [
+          "Définition des fonctionnalités",
+          "Développement front/debug",
+          "Rédaction de la documentation interne/externe",
+          "Améliorer le workflow et le processus de publication des applications"
+        ],
+        "stack": [
+          "React",
+          "Redux",
+          "Webpack",
+          "CI/CD (Gitlab)",
+          "Git Flow",
+          "Jira & Confluence"
+        ],
+        "video": "/skewer/demo.mp4",
+        "images": [
+          "/skewer/graph.png",
+          "/skewer/media_lib.png",
+          "/skewer/key_value.png",
+          "/skewer/preview.png",
+          "/skewer/external-preview.png"
+        ]
+      },
+      {
+        "title": "User Manger",
+        "company": "SkewerLab",
+        "companyLink": "https://www.skewerlab.com",
+        "href": "/work/skewerlab-user_manager",
+        "summary": "Conçue à l'origine comme un outil interne, cette application simplifie la création, la suppression et la modification des utilisateurs, offrant aux équipes de vente et aux chefs de projet un meilleur contrôle de l'accès aux applications.",
+        "role": ["Développeur Web", "Web designer"],
+        "responsibilities": ["Développement front/debug", "Web design"],
+        "stack": ["React", "Bootstrap", "CI/CD (Gitlab)"],
+        "video": null,
+        "images": [
+          "/user_manager/user.png",
+          "/user_manager/profile.png",
+          "/user_manager/create.png"
+        ]
+      },
+      {
+        "title": "Video Player",
+        "company": "SkewerLab",
+        "companyLink": "https://www.skewerlab.com",
+        "href": "/work/skewerlab-player",
+        "summary": "En plus de l'éditeur vidéo, SkewerLab permet de diffuser des vidéos basées sur des données à l'aide d'un lecteur vidéo personnalisé.",
+        "role": ["Développeur Web", "Référent technique", "Référent client"],
+        "responsibilities": [
+          "Définition des fonctionnalités",
+          "Développement front/debug",
+          "Rédaction de la documentation interne/externe",
+          "Référent client pour l'intégration et la mise en ligne de projets",
+          "Améliorer le workflow et le processus de publication des applications"
+        ],
+        "stack": [
+          "JS vanilla",
+          "HlsJS",
+          "VideoJS",
+          "M3U8",
+          "Cypress",
+          "Webpack"
+        ],
+        "video": null,
+        "images": ["/skewer/preview.png", "/skewer/external-preview.png"]
+      },
+      {
+        "title": "MyRole v3",
+        "company": "MyRole",
+        "companyLink": "https://myrole.fr",
+        "href": "/work/my-role",
+        "summary": "Refonte de l'application front MyRole (application de gestion administrative pour les intermittents du cinéma et de l'audiovisuel).",
+        "role": ["Développeur Web", "Référent technique", "Maitre de stage"],
+        "responsibilities": [
+          "Définition des fonctionnalités",
+          "Développement front/debug",
+          "Architecture d'application"
+        ],
+        "stack": [
+          "React",
+          "Tailwind",
+          "Storybook",
+          "Cypress",
+          "React Query",
+          "Git Flow"
+        ]
+      },
+      {
+        "title": "Video player",
+        "company": "Video Run Run",
+        "companyLink": "https://www.videorunrun.com",
+        "href": "/work/video-run-run",
+        "summary": "Ce projet propose un lecteur vidéo personnalisable construit avec TypeScript, VideoJS et Vite.js. Il comprend des fonctionnalités telles que des marqueurs de chapitre, le suivi de la saillance et une barre de contrôle personnalisée.",
+        "role": ["Développeur Web"],
+        "responsibilities": [
+          "Features definition",
+          "Writing internal documentation"
+        ],
+        "stack": ["TypeScript", "VideoJS", "ViteJS", "Sass"]
+      }
+    ]
   }
 }
