@@ -1,0 +1,164 @@
+{
+  "home": {
+    "title": "Franck Fernandez",
+    "description": [
+      "Développeur full stack & Web3 / Passionné de blockchain.",
+      "Travaille actuellement à temps plein en tant que développeur web chez"
+    ],
+    "navigation": {
+      "work": "Projets",
+      "about": "À propos",
+      "contact": "Contact"
+    }
+  },
+  "about": {
+    "title": "À propos",
+    "subheading": "Je suis Franck. Développeur, créateur et résolveur de problèmes.",
+    "paragraphs": [
+      "C'est à l'intersection de l'innovation et de la technologie que j'ai toujours trouvé ma passion. Qu'il s'agisse de Typescript, NextJS, Solidity, Storybook ou CSS, j'ai plongé dans diverses technologies avec un esprit d'innovation qui remonte à mes débuts avec simplement HTML et CSS.",
+      "En 2024, mon parcours s'étend de la conception d'application web à la conception de smart contract, player vidéo, le développement web mais, surtout, la conception d'application ayant de l'impact. Chaque étape, petite ou grande, m'a permis d'arriver là où je suis aujourd'hui.",
+      "Ce qui me passionne le plus dans le métier de Développeur, c'est la capacité de concevoir des applications qui servent un objectif et répondent à des problèmes réels. Cela va au-delà des simples boutons de site web, et implique une passion pour la conception d'application qui aident vraiment les gens. Qu'il s'agisse d'améliorer leur processus de création vidéo, de simplfier un processus, il s'agit avant tout d'avoir un impact significatif.",
+      "En adoptant la polyvalence, j'ai navigué dans les domaines autour de mon rôle, de web design, scrum master ou encore référent technique, je trouve la joie dans la nature multidimensionnelle de mon travail. Comprendre les besoins des utilisateurs, identifier les problèmes pertinents et fournir rapidement des solutions efficaces sont les clés de voûte d'une bonne conception de produit. Je souhaite une itération et une amélioration continues, ainsi qu'un potentiel illimité à l'intersection de la technologie et de l'objectif."
+    ],
+    "experience": {
+      "title": "Expérience",
+      "one": "ans d'expérience en développement web",
+      "items": [
+        "Alyra, Développeur Blockchain",
+        "Licence Pro DIM (Développeur informatique multi-support)",
+        "DUT MMI (Métiers du Multimédia et de l'Internet)"
+      ]
+    },
+    "skills": {
+      "title": "Compétences",
+      "items": [
+        "TypeScript / Solidity / ReactJS / NextJS / Hardhat / Tailwind / Storybook / Cypress / CI-CD / Méthodologies Agiles / Webflow Development"
+      ]
+    },
+    "LinkedIn": "En savoir plus sur LinkedIn"
+  },
+  "contact": {
+    "title": "Hello.",
+    "description": "Besoin d'un beau site, bien structuré que vous pouvez posséder et gérer vous-même ?",
+    "call_to_action": "Prenez contact."
+  },
+  "work": {
+    "title": "Projets",
+    "description": [
+      "Il s'agit d'une vitrine de mon meilleur travail dans une variété de domaines en tant que développeur",
+      "Le monde du développement est en constante évolution, tout comme mon rôle au cours des dernières",
+      "années. Je continue d'apprendre et d'acquérir de nouvelles compétences chaque jour."
+    ],
+    "project": {
+      "ROLE": "RÔLE",
+      "RESPONSIBILITIES": "RESPONSABILITÉS"
+    },
+    "jobs": [
+      {
+        "title": "Video Editor",
+        "company": "SkewerLab",
+        "companyLink": "https://www.skewerlab.com",
+        "href": "/work/skewerlab-editor",
+        "summary": "Réalisez des vidéos optimisées pour adapter le contenu à des publics multiples. Grâce à SkewerLab, des centaines de vidéos peuvent être générées à partir d'un seul projet.",
+        "role": ["Développeur front", "Référent technique"],
+        "responsibilities": [
+          "Définition des fonctionnalités",
+          "Développement front/debug",
+          "Rédaction de la documentation interne/externe",
+          "Améliorer le workflow et le processus de publication des applications"
+        ],
+        "stack": [
+          "React",
+          "Redux",
+          "Webpack",
+          "CI/CD (Gitlab)",
+          "Git Flow",
+          "Jira & Confluence"
+        ],
+        "video": "/skewer/demo.mp4",
+        "images": [
+          "/skewer/graph.png",
+          "/skewer/media_lib.png",
+          "/skewer/key_value.png",
+          "/skewer/preview.png",
+          "/skewer/external-preview.png"
+        ]
+      },
+      {
+        "title": "User Manger",
+        "company": "SkewerLab",
+        "companyLink": "https://www.skewerlab.com",
+        "href": "/work/skewerlab-user_manager",
+        "summary": "Conçue à l'origine comme un outil interne, cette application simplifie la création, la suppression et la modification des utilisateurs, offrant aux équipes de vente et aux chefs de projet un meilleur contrôle de l'accès aux applications.",
+        "role": ["Développeur Web", "Web designer"],
+        "responsibilities": ["Développement front/debug", "Web design"],
+        "stack": ["React", "Bootstrap", "CI/CD (Gitlab)"],
+        "video": null,
+        "images": [
+          "/user_manager/user.png",
+          "/user_manager/profile.png",
+          "/user_manager/create.png"
+        ]
+      },
+      {
+        "title": "Video Player",
+        "company": "SkewerLab",
+        "companyLink": "https://www.skewerlab.com",
+        "href": "/work/skewerlab-player",
+        "summary": "En plus de l'éditeur vidéo, SkewerLab permet de diffuser des vidéos basées sur des données à l'aide d'un lecteur vidéo personnalisé.",
+        "role": ["Développeur Web", "Référent technique", "Référent client"],
+        "responsibilities": [
+          "Définition des fonctionnalités",
+          "Développement front/debug",
+          "Rédaction de la documentation interne/externe",
+          "Référent client pour l'intégration et la mise en ligne de projets",
+          "Améliorer le workflow et le processus de publication des applications"
+        ],
+        "stack": [
+          "JS vanilla",
+          "HlsJS",
+          "VideoJS",
+          "M3U8",
+          "Cypress",
+          "Webpack"
+        ],
+        "video": null,
+        "images": ["/skewer/preview.png", "/skewer/external-preview.png"]
+      },
+      {
+        "title": "MyRole v3",
+        "company": "MyRole",
+        "companyLink": "https://myrole.fr",
+        "href": "/work/my-role",
+        "summary": "Refonte de l'application front MyRole (application de gestion administrative pour les intermittents du cinéma et de l'audiovisuel).",
+        "role": ["Développeur Web", "Référent technique", "Maitre de stage"],
+        "responsibilities": [
+          "Définition des fonctionnalités",
+          "Développement front/debug",
+          "Architecture d'application"
+        ],
+        "stack": [
+          "React",
+          "Tailwind",
+          "Storybook",
+          "Cypress",
+          "React Query",
+          "Git Flow"
+        ]
+      },
+      {
+        "title": "Video player",
+        "company": "Video Run Run",
+        "companyLink": "https://www.videorunrun.com",
+        "href": "/work/video-run-run",
+        "summary": "Ce projet propose un lecteur vidéo personnalisable construit avec TypeScript, VideoJS et Vite.js. Il comprend des fonctionnalités telles que des marqueurs de chapitre, le suivi de la saillance et une barre de contrôle personnalisée.",
+        "role": ["Développeur Web"],
+        "responsibilities": [
+          "Features definition",
+          "Writing internal documentation"
+        ],
+        "stack": ["TypeScript", "VideoJS", "ViteJS", "Sass"]
+      }
+    ]
+  }
+}
