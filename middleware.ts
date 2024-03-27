@@ -30,7 +30,17 @@ export function middleware(request: NextRequest) {
     [
       "/manifest.json",
       "/favicon.ico",
-      // Your other files in `public`
+      "/skewer/graph.png",
+      "/skewer/media_lib.png",
+      "/skewer/key_value.png",
+      "/skewer/preview.png",
+      "/skewer/external-preview.png",
+      "/skewer/preview.png",
+      "/skewer/external-preview.png",
+      "/skewer/demo.mp4",
+      "/user_manager/user.png",
+      "/user_manager/profile.png",
+      "/user_manager/create.png",
     ].includes(pathname)
   )
     return;
