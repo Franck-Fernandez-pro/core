@@ -1,4 +1,4 @@
-import { JOBS, fondamento } from "@/constant";
+import { fondamento } from "@/constant";
 import { yearsDifference } from "@/utils";
 import { Locale, getDictionary } from "@/utils/i18n-config";
 import { Metadata } from "next";

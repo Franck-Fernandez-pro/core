@@ -1,4 +1,4 @@
-import { JOBS, fondamento } from "@/constant";
+import { fondamento } from "@/constant";
 import { Locale, getDictionary } from "@/utils/i18n-config";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,24 +8,26 @@ interface Props {
   params: { project: string; lang: Locale };
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const JOB = JOBS.find(
-    ({ href }) => href.replace("/work/", "") === params.project,
-  );
+// export async function generateMetadata({ params }: Props): Promise<Metadata> {
+//   const JOB = JOBS.find(
+//     ({ href }) => href.replace("/work/", "") === params.project,
+//   );
 
-  return {
-    title: JOB?.title,
-  };
-}
+//   return {
+//     title: JOB?.title,
+//   };
+// }
 
 export default async function Project({ params }: Props) {
   const {
-    work: { project },
+    work: { project, jobs },
   } = await getDictionary(params.lang);
-  const JOB = JOBS.find(
+  const JOB = jobs.find(
     ({ href }) => href.replace("/work/", "") === params.project,
   );
+
   if (!JOB) redirect("/work");
+
   const {
     title,
     companyLink,
