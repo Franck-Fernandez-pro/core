@@ -47,6 +47,11 @@ export function middleware(request: NextRequest) {
       "/spotify-clone/4.png",
       "/spotify-clone/5.png",
       "/spotify-clone/6.png",
+      "/miro-clone/1.png",
+      "/miro-clone/2.png",
+      "/miro-clone/3.png",
+      "/miro-clone/4.png",
+      "/miro-clone/5.png",
     ].includes(pathname)
   )
     return;

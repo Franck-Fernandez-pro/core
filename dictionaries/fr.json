@@ -184,6 +184,32 @@
           "Writing internal documentation"
         ],
         "stack": ["TypeScript", "VideoJS", "ViteJS", "Sass"]
+      },
+      {
+        "title": "Miro clone",
+        "company": "Projet perso",
+        "isPerso": true,
+        "companyLink": "https://miro-clone-blush.vercel.app/",
+        "href": "/work/miro-clone",
+        "summary": "Application développée avec le tutoriel de 'code with antonio' pour prendre en main Convex et LiveBlocks. Vous pouvez créer un compte, une organisation, inviter des utilisateurs et créer votre premier diagram.",
+        "role": ["Développeur Full-Stack"],
+        "responsibilities": [],
+        "stack": [
+          "TypeScript",
+          "NextJS",
+          "Tailwind",
+          "Convex",
+          "Vercel",
+          "Clerk",
+          "LiveBlocks"
+        ],
+        "images": [
+          "/miro-clone/1.png",
+          "/miro-clone/2.png",
+          "/miro-clone/3.png",
+          "/miro-clone/4.png",
+          "/miro-clone/5.png"
+        ]
       }
     ]
   }
