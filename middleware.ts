@@ -30,6 +30,7 @@ export function middleware(request: NextRequest) {
     [
       "/manifest.json",
       "/favicon.ico",
+      "/about.jpeg",
       "/skewer/graph.png",
       "/skewer/media_lib.png",
       "/skewer/key_value.png",
