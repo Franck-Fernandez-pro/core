@@ -28,7 +28,7 @@ export default async function About({
         </div>
 
         <Image
-          className="hidden !h-auto !w-[30%] md:block"
+          className="hidden !h-auto !w-[30%]"
           src="/about.jpeg"
           width={747}
           height={1051}
