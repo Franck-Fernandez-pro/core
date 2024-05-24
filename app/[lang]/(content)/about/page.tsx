@@ -36,23 +36,21 @@ export default async function About({
         />
       </div>
 
-      <p className="leading-8 md:max-w-[75%]">
-        {about.paragraphs.map((p: string) => (
-          <>
+      <div className="leading-8 md:max-w-[75%]">
+        {about.paragraphs.map((p: string, key) => (
+          <div key={key}>
             {p}
             <br />
             <br />
-          </>
+          </div>
         ))}
         <br />
         <span className={quoteClassName}>{about.experience.title}</span>
         <br />
         <br />
         {`- ${yearsDifference(new Date(2019, 0, 1))} ${about.experience.one}`}
-        {about.experience.items.map((i: string) => (
-          <>
-            <br />- {i}
-          </>
+        {about.experience.items.map((i: string, idx) => (
+          <div key={idx}>- {i}</div>
         ))}
         <br />
         <br />
@@ -70,7 +68,7 @@ export default async function About({
         >
           {about.LinkedIn}
         </a>
-      </p>
+      </div>
     </section>
   );
 }
