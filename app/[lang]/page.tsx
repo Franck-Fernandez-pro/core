@@ -25,16 +25,7 @@ export default async function Home({
         </h1>
         <div className="space-y-4 text-[13px] tracking-[0.5px]">
           <p>{home.description[0]}</p>
-          <p>
-            {`${home.description[1]} `}
-            <a
-              className="link"
-              href="https://www.linkedin.com/company/explorers-g/"
-              target="_blank"
-            >
-              Explorer Lab
-            </a>
-          </p>
+          <p>{home.description[1]}</p>
         </div>
       </section>
 
