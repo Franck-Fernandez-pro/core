@@ -16,13 +16,18 @@ export const metadata: Metadata = {
   description: "Full stack & Web3 developer / Blockchain enthusiastic",
 };
 
-export default function RootLayout({
-  children,
-  params,
-}: {
-  children: React.ReactNode;
-  params: { lang: Locale };
-}) {
+export default async function RootLayout(
+  props: {
+    children: React.ReactNode;
+    params: Promise<{ lang: Locale }>;
+  }
+) {
+  const params = await props.params;
+
+  const {
+    children
+  } = props;
+
   return (
     <html lang={params.lang} className="h-full">
       <body

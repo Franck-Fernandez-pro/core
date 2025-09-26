@@ -16,11 +16,17 @@ const linkProps = {
   },
 };
 
-export default async function Work({
-  params: { lang },
-}: {
-  params: { lang: Locale };
-}) {
+export default async function Work(
+  props: {
+    params: Promise<{ lang: Locale }>;
+  }
+) {
+  const params = await props.params;
+
+  const {
+    lang
+  } = params;
+
   const { work } = await getDictionary(lang);
   return (
     <section className="lg:grid-rows-0 flex flex-col gap-7 lg:grid lg:grid-cols-3 lg:gap-3">

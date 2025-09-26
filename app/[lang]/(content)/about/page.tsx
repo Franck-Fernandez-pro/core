@@ -10,11 +10,17 @@ export const metadata: Metadata = {
 
 const quoteClassName = `${fondamento.className} text-xl font-medium uppercase leading-7 tracking-[4px]`;
 
-export default async function About({
-  params: { lang },
-}: {
-  params: { lang: Locale };
-}) {
+export default async function About(
+  props: {
+    params: Promise<{ lang: Locale }>;
+  }
+) {
+  const params = await props.params;
+
+  const {
+    lang
+  } = params;
+
   const { about } = await getDictionary(lang);
 
   return (

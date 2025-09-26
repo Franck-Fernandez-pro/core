@@ -6,11 +6,17 @@ export const metadata: Metadata = {
   title: "Contact",
 };
 
-export default async function Contact({
-  params: { lang },
-}: {
-  params: { lang: Locale };
-}) {
+export default async function Contact(
+  props: {
+    params: Promise<{ lang: Locale }>;
+  }
+) {
+  const params = await props.params;
+
+  const {
+    lang
+  } = params;
+
   const { contact } = await getDictionary(lang);
   return (
     <section className="pt-[20%]">
