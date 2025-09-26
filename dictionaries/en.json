@@ -55,6 +55,47 @@
     },
     "jobs": [
       {
+        "title": "Bedrock Player",
+        "company": "Bedrock Streaming",
+        "companyLink": "https://bedrockstreaming.com/",
+        "href": "/work/bedrock",
+        "summary": "M6, VideoLand, RTL+ Hungary, RTL+ Germany. Bedrock creates and operates full-scope streaming platforms for leading media companies with best-in-class user experience across AVOD, SVOD and hybrid business models. We are the trusted strategic streaming partner, delivering on-demand video, linear channels, and live sports for more than 45 million users in Europe.",
+        "role": [
+          "Front developer",
+          "Technical advisor",
+          "Release manager",
+          "Incident manager"
+        ],
+        "responsibilities": [
+          "Front Development/Debugging on web player",
+          "Writing internal documentation",
+          "Improve workflow"
+        ],
+        "stack": [
+          "React & Redux",
+          "Module CSS",
+          "TypeScript",
+          "Storybook",
+          "Jest & Cucumber",
+          "New Relic & NPAW",
+          "Shaka/HTML5",
+          "Chromecast",
+          "Advertising (VMAP/VAST)",
+          "Github action",
+          "Target Process & Confluence"
+        ],
+        "images": [
+          "/bedrock/m6-player.jpeg",
+          "/bedrock/m6-player-page.jpeg",
+          "/bedrock/rtlnl-player.jpeg",
+          "/bedrock/rtlnl-player-page.jpeg",
+          "/bedrock/rtlhu-player.jpeg",
+          "/bedrock/rtlhu-player-page.jpeg",
+          "/bedrock/rtlde-player.jpeg",
+          "/bedrock/rtlde-player-page.jpeg"
+        ]
+      },
+      {
         "title": "Video Editor",
         "company": "SkewerLab",
         "companyLink": "https://www.skewerlab.com",

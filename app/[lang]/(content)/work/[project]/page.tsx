@@ -76,7 +76,9 @@ export default async function Project({ params }: Props) {
             <div className={style.div}>
               <span className={style.ul}>{project.ROLE}</span>
               <ul className={style.li}>
-                {role?.map((r, idx) => <li key={idx}>{r}</li>)}
+                {role?.map((r, idx) => (
+                  <li key={idx}>{r}</li>
+                ))}
               </ul>
             </div>
           )}
@@ -85,7 +87,9 @@ export default async function Project({ params }: Props) {
             <div className={style.div}>
               <span className={style.ul}>{project.RESPONSIBILITIES}</span>
               <ul className={style.li}>
-                {responsibilities?.map((r, idx) => <li key={idx}>{r}</li>)}
+                {responsibilities?.map((r, idx) => (
+                  <li key={idx}>{r}</li>
+                ))}
               </ul>
             </div>
           )}
@@ -94,7 +98,9 @@ export default async function Project({ params }: Props) {
             <div className={style.div}>
               <span className={style.ul}>Stack</span>
               <ul className={style.li}>
-                {stack?.map((s, idx) => <li key={idx}>{s}</li>)}
+                {stack?.map((s, idx) => (
+                  <li key={idx}>{s}</li>
+                ))}
               </ul>
             </div>
           )}
