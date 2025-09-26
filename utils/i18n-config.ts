@@ -11,5 +11,10 @@ const dictionaries = {
   fr: () => import("../dictionaries/fr.json").then((module) => module.default),
 };
 
-export const getDictionary = async (locale: Locale) =>
-  dictionaries[locale]?.() ?? dictionaries.fr();
+export const getDictionary = async (locale: string) => {
+  if (!i18n.locales.includes(locale as Locale)) {
+    return dictionaries.fr();
+  }
+
+  return dictionaries[locale as Locale]?.() ?? dictionaries.fr();
+};

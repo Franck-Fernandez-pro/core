@@ -1,6 +1,5 @@
 import { fondamento } from "@/constant";
 import { getDictionary } from "@/utils/i18n-config";
-import { Locale } from "@/utils/i18n-config";
 import Link from "next/link";
 
 const linkProps = {
@@ -11,11 +10,13 @@ const linkProps = {
   },
 };
 
-export default async function Home({
-  params: { lang },
-}: {
-  params: { lang: Locale };
+export default async function Home(props: {
+  params: Promise<{ lang: string }>;
 }) {
+  const params = await props.params;
+
+  const { lang } = params;
+
   const { home } = await getDictionary(lang);
   return (
     <main className="grid-cols-0 lg:grid-rows-0 grid gap-7 lg:grid-cols-3 lg:gap-3">

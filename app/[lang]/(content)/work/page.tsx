@@ -1,6 +1,6 @@
 import { fondamento } from "@/constant";
 import { yearsDifference } from "@/utils";
-import { Locale, getDictionary } from "@/utils/i18n-config";
+import { getDictionary } from "@/utils/i18n-config";
 import { Metadata } from "next";
 import Link from "next/link";
 
@@ -16,11 +16,13 @@ const linkProps = {
   },
 };
 
-export default async function Work({
-  params: { lang },
-}: {
-  params: { lang: Locale };
+export default async function Work(props: {
+  params: Promise<{ lang: string }>;
 }) {
+  const params = await props.params;
+
+  const { lang } = params;
+
   const { work } = await getDictionary(lang);
   return (
     <section className="lg:grid-rows-0 flex flex-col gap-7 lg:grid lg:grid-cols-3 lg:gap-3">

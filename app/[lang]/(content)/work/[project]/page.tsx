@@ -1,14 +1,15 @@
 import { fondamento } from "@/constant";
-import { Locale, getDictionary } from "@/utils/i18n-config";
+import { getDictionary } from "@/utils/i18n-config";
 import { Metadata } from "next";
 import Image from "next/image";
 import { redirect } from "next/navigation";
 
 interface Props {
-  params: { project: string; lang: Locale };
+  params: Promise<{ project: string; lang: string }>;
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata(props: Props): Promise<Metadata> {
+  const params = await props.params;
   const {
     work: { jobs },
   } = await getDictionary(params.lang);
@@ -21,7 +22,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default async function Project({ params }: Props) {
+export default async function Project(props: Props) {
+  const params = await props.params;
   const {
     work: { project, jobs },
   } = await getDictionary(params.lang);
