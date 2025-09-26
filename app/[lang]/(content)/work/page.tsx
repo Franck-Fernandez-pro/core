@@ -1,6 +1,6 @@
 import { fondamento } from "@/constant";
 import { yearsDifference } from "@/utils";
-import { Locale, getDictionary } from "@/utils/i18n-config";
+import { getDictionary } from "@/utils/i18n-config";
 import { Metadata } from "next";
 import Link from "next/link";
 
@@ -16,16 +16,12 @@ const linkProps = {
   },
 };
 
-export default async function Work(
-  props: {
-    params: Promise<{ lang: Locale }>;
-  }
-) {
+export default async function Work(props: {
+  params: Promise<{ lang: string }>;
+}) {
   const params = await props.params;
 
-  const {
-    lang
-  } = params;
+  const { lang } = params;
 
   const { work } = await getDictionary(lang);
   return (

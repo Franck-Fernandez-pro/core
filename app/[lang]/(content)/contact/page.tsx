@@ -1,21 +1,17 @@
 import { fondamento } from "@/constant";
-import { Locale, getDictionary } from "@/utils/i18n-config";
+import { getDictionary } from "@/utils/i18n-config";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contact",
 };
 
-export default async function Contact(
-  props: {
-    params: Promise<{ lang: Locale }>;
-  }
-) {
+export default async function Contact(props: {
+  params: Promise<{ lang: string }>;
+}) {
   const params = await props.params;
 
-  const {
-    lang
-  } = params;
+  const { lang } = params;
 
   const { contact } = await getDictionary(lang);
   return (

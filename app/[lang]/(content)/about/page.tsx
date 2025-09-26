@@ -1,6 +1,6 @@
 import { fondamento } from "@/constant";
 import { yearsDifference } from "@/utils";
-import { Locale, getDictionary } from "@/utils/i18n-config";
+import { getDictionary } from "@/utils/i18n-config";
 import { Metadata } from "next";
 import Image from "next/image";
 
@@ -10,16 +10,12 @@ export const metadata: Metadata = {
 
 const quoteClassName = `${fondamento.className} text-xl font-medium uppercase leading-7 tracking-[4px]`;
 
-export default async function About(
-  props: {
-    params: Promise<{ lang: Locale }>;
-  }
-) {
+export default async function About(props: {
+  params: Promise<{ lang: string }>;
+}) {
   const params = await props.params;
 
-  const {
-    lang
-  } = params;
+  const { lang } = params;
 
   const { about } = await getDictionary(lang);
 

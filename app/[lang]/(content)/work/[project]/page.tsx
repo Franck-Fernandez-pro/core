@@ -1,11 +1,11 @@
 import { fondamento } from "@/constant";
-import { Locale, getDictionary } from "@/utils/i18n-config";
+import { getDictionary } from "@/utils/i18n-config";
 import { Metadata } from "next";
 import Image from "next/image";
 import { redirect } from "next/navigation";
 
 interface Props {
-  params: Promise<{ project: string; lang: Locale }>;
+  params: Promise<{ project: string; lang: string }>;
 }
 
 export async function generateMetadata(props: Props): Promise<Metadata> {

@@ -4,7 +4,7 @@ import { Locale } from "@/utils/i18n-config";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export default function Navbar(props: { lang: Locale }) {
+export default function Navbar(props: { lang: string }) {
   const pathName = usePathname();
 
   function redirectedPathName(locale: Locale) {
