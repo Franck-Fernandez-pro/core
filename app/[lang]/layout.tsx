@@ -30,7 +30,7 @@ export default async function RootLayout({
         className={`${montserrat.className} h-full bg-[#ece7e1] text-[#1a1818]`}
       >
         <Navbar lang={lang} />
-        <div className="mx-auto h-full max-w-[85%] ">{children}</div>
+        <div className="mx-auto h-full max-w-[85%]">{children}</div>
         <SpeedInsights />
         <Analytics />
       </body>

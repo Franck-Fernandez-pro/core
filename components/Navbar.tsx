@@ -21,7 +21,7 @@ export default function Navbar(props: { lang: string }) {
         style={{
           flex: "0 auto",
         }}
-        className="link mb-10 -rotate-90 border-transparent! pl-5 pr-4 text-center text-[10px] font-medium uppercase tracking-[5px]"
+        className="link border-transparent! mb-10 -rotate-90 pl-5 pr-4 text-center text-[10px] font-medium uppercase tracking-[5px]"
       >
         HOME
       </Link>
