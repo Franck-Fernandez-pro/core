@@ -32,10 +32,6 @@ export default async function Contact(props: {
           LinkedIn
         </a>{" "}
         /{" "}
-        <a className="link" href="https://twitter.com/Akela_FR" target="_blank">
-          Twitter
-        </a>{" "}
-        /{" "}
         <a
           className="link"
           href="https://github.com/Franck-Fernandez-pro"
