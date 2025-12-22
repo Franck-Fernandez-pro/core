@@ -21,12 +21,12 @@ export default function Navbar(props: { lang: string }) {
         style={{
           flex: "0 auto",
         }}
-        className="link mb-10 -rotate-90 !border-transparent pl-5 pr-4 text-center text-[10px] font-medium uppercase tracking-[5px]"
+        className="link mb-10 -rotate-90 border-transparent! pl-5 pr-4 text-center text-[10px] font-medium uppercase tracking-[5px]"
       >
         HOME
       </Link>
 
-      <div className="mb-20 mt-3 h-24 w-[1px] bg-[#1a1818]"></div>
+      <div className="mb-20 mt-3 h-24 w-px bg-[#1a1818]"></div>
 
       <div className="mb-10 mt-auto hidden pl-5 pr-4 text-center text-[10px] font-medium uppercase md:block">
         {props.lang === "en" ? (

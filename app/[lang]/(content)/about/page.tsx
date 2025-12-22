@@ -24,13 +24,13 @@ export default async function About(props: {
       <div className="mb-5 flex justify-between pt-[12%]">
         <div className={fondamento.className}>
           <h1 className="text-[14vw] font-light">{about.title}</h1>
-          <span className="md:leading-1 pb-[2%] text-[46px] leading-[50px]">
+          <span className="pb-[2%] text-[46px] leading-[50px]">
             {about.subheading}
           </span>
         </div>
 
         <Image
-          className="hidden !h-auto !w-[30%] md:block"
+          className="h-auto! w-[30%]! hidden md:block"
           src="/about.jpeg"
           width={747}
           height={1051}
